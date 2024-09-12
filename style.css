@@ -1,35 +1,71 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
     padding: 20px;
+    background-color: #f0f8ff; /* Light background for better contrast */
+}
+
+header {
+    background-color: #4a90e2; /* Blue header */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the header */
 }
 
 #webcam {
     margin-top: 20px;
-    border: 1px solid black;
+    border: 2px solid #4a90e2; /* Blue border for the webcam */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 button {
     margin-top: 20px;
     padding: 10px;
     font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #357ab8; /* Darker blue on hover */
+    color: white; /* Change text color on hover */
 }
 
 #prediction-result {
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
+    color: #4a90e2; /* Blue text for prediction result */
+    animation: fadeIn 0.5s; /* Fade-in animation for results */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #captured-image {
     margin-top: 20px;
-    border: 1px solid black;
+    border: 2px solid #4a90e2; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
 }
 
 #captured-img {
     margin-top: 20px;
-    border: 1px solid black;
+    border: 2px solid #4a90e2; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
     max-width: 100%;
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+#captured-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
