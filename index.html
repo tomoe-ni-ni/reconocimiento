@@ -19,7 +19,7 @@
         </header>
         <div class="container mt-4">
             <div class="mb-3"> <button class="btn btn-primary" id="usar-camara" onclick="startWebcam()">Usar
-                    Cámara</button> <video id="webcam" autoplay playsinline width="224" height="224"
+                    Cámara</button> <video id="webcam" autoplay playsinline width="300" height="300"
                     class="mt-3"></video> <button id="predict-button" class="btn btn-success mt-2">Predecir
                     </button> </div>
             <p id="prediction-result" class="mt-3"></p>
@@ -27,7 +27,7 @@
     </main>
     <script>            
         console.log('Iniciando definición de classNames'); 
-        const classNames = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']; 
+        const classNames = ['enojado', 'disgusto', 'miedo', 'feliz', 'neutral', 'triste', 'sorpresa']; 
         console.log('classNames definido:', classNames); 
         let model; 
         let webcam; // Esta variable almacenará la instancia de la cámara            // Crear el modelo            
